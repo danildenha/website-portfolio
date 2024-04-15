@@ -44,9 +44,9 @@ const Navbar = () => {
       <div className="md:hidden"></div>
       {/* MENU BUTTON */}
       <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={(() => setOpen(!open))}>
-        <div className="w-10 h-1 bg-gradient-to-r from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1 bg-gradient-to-r from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1 bg-gradient-to-r from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
       </button>
       {/* MENU BUTTON LIST */}
       {open && (
