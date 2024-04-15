@@ -3,12 +3,13 @@
 import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
+import NavLink from "./navLink";
 
 const links = [
-  {url: "/", title: "Home"},
-  {url: "/about", title: "About"},
-  {url: "/portfolio", title: "Portfolio"},
-  {url: "/contact", title: "Contact"},
+  { url: "/", title: "Home" },
+  { url: "/about", title: "About" },
+  { url: "/portfolio", title: "Portfolio" },
+  { url: "/contact", title: "Contact" },
 ]
 
 const Navbar = () => {
@@ -16,13 +17,8 @@ const Navbar = () => {
   return (
     <div className='h-full flex items-center justify-between 
         px-4 sm:px-8 md:px-12 lg:px-20 xl:px-48'>
-          <div className="hidden md:flex gap-4">
-            {links.map(link=>(
-              <Link href={link.url} key={link.title}>{link.title}</Link>
-            ))}
-          </div>
       {/* LOGO WITH GRADIENT */}
-      <div className="md:hidden lg:flex xl:w-1/3 xl:justify-center">
+      <div className="md:hidden lg:flex xl:w-1/3 xl:justify:left">
         <Link href="/" className="flex items-center justify-center">
           <span className="text-3xl font-bold tracking-wide 
   bg-gradient-to-r from-blue-600 to-black
@@ -31,6 +27,12 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden md:flex gap-4 w-1/3">
+        {links.map((link) => (
+          <NavLink link={link} key={link.title}/>
+        ))}
+      </div>
+      {/* SOCIAL MEDIA */}
+      <div className="hidden sm:flex md:flex gap-4 w-1/3 justify-center">
         <Link href="https://github.com/danildenha">
           <Image src="/github.png" alt="" width={24} height={24} />
         </Link>
@@ -48,13 +50,13 @@ const Navbar = () => {
       </button>
       {/* MENU BUTTON LIST */}
       {open && (
-      <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white
+        <div className="absolute top-0 left-0 w-screen h-screen bg-black text-white
       flex flex-col items-center 
       justify-center gap-8 text-4xl z-40">
-        {links.map((link) => (
-                <Link href={link.url}>{link.title}</Link>
-            ))}
-      </div>
+          {links.map((link) => (
+            <Link href={link.url}>{link.title}</Link>
+          ))}
+        </div>
       )}
 
 
