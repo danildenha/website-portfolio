@@ -1,0 +1,9 @@
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-image 0.3s ease;
+  }
+  
+  .hover-effect:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, #dfe2e5, rgb(64, 64, 64));
+  }

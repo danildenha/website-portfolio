@@ -4,6 +4,7 @@ import Link from "next/link"
 import { useState } from "react"
 import Image from "next/image"
 import NavLink from "./navLink";
+import '../content.css'
 
 const links = [
   { url: "/", title: "Home" },
@@ -27,26 +28,31 @@ const Navbar = () => {
         </Link>
       </div>
       <div className="hidden md:flex gap-4 w-1/3">
-        {links.map((link) => (
-          <NavLink link={link} key={link.title}/>
-        ))}
-      </div>
+    {links.map((link) => (
+      <NavLink link={link} key={link.title} />
+    ))}
+  </div>
       {/* SOCIAL MEDIA */}
       <div className="hidden sm:flex md:flex gap-4 w-1/3 justify-center">
-        <Link href="https://github.com/danildenha">
-          <Image src="/github.png" alt="" width={24} height={24} />
-        </Link>
-        <Link href="https://www.linkedin.com/in/danil-denha/">
-          <Image src="/linkedin.png" alt="" width={24} height={24} />
-        </Link>
+        <div className="hover-effect text-gray-200 rounded-full">
+          <a href="https://github.com/danildenha" target="_blank" rel="noopener noreferrer">
+            <img src="/github.png" alt="" width={24} height={24} />
+          </a>
+        </div>
+        <div className="hover-effect text-gray-700">
+          <a href="https://www.linkedin.com/in/danil-denha/" target="_blank" rel="noopener noreferrer">
+            <img src="/linkedin.png" alt="" width={24} height={24} />
+          </a>
+        </div>
       </div>
+
       {/* RESPONSIVE MENU */}
       <div className="md:hidden"></div>
       {/* MENU BUTTON */}
       <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={(() => setOpen(!open))}>
-        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
       </button>
       {/* MENU BUTTON LIST */}
       {open && (
