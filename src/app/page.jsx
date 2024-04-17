@@ -1,6 +1,6 @@
 "use client";
-
 import Image from "next/image";
+
 
 const Homepage = () => {
   return (
@@ -24,10 +24,14 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
-            <button className="p-4 rounded-lg ring-1 ring-black bg-black text-white">
-              View My Work
+          <button className="p-4 rounded-lg ring-1 bg-black text-white 
+          transition duration-300 ease-in-out transform hover:scale-105 
+          hover:bg-gradient-to-r from-black to-blue-800 hover:shadow-lg">
+           View My Work
             </button>
-            <button className="p-4 rounded-lg ring-1 ring-black">
+            <button className="p-4 rounded-lg ring-1 ring-black text-white 
+          transition duration-300 ease-in-out transform hover:scale-105 
+          hover:bg-gradient-to-r from-blue-100 hover:shadow-lg ">
               Contact Me
             </button>
           </div>
