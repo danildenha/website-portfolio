@@ -50,9 +50,9 @@ const Navbar = () => {
       <div className="md:hidden"></div>
       {/* MENU BUTTON */}
       <button className="w-10 h-8 flex flex-col justify-between z-50 relative" onClick={(() => setOpen(!open))}>
-        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
-        <div className="w-10 h-1.5 bg-gradient-to-b from-blue-600 to-black rounded"></div>
+        <div className="w-10 h-1.5 rounded" style={{ backgroundImage: 'linear-gradient(to right, #000000, #2563EB)' }}></div>
+        <div className="w-10 h-1.5 rounded" style={{ backgroundImage: 'linear-gradient(to right, #000000, #2563EB)' }}></div>
+        <div className="w-10 h-1.5 rounded" style={{ backgroundImage: 'linear-gradient(to right, #000000, #2563EB)' }}></div>
       </button>
       {/* MENU BUTTON LIST */}
       {open && (
