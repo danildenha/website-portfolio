@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./components/navbar";
 import Head from "next/head";
-import TransitionProvider from "@/components/transitionProvider";
+import TransitionProvider from "./components/transitionProvider"
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
     </Head>
       <body className={inter.className}>
-        <TransitionProvider/>
+      <TransitionProvider>{children}</TransitionProvider>
       </body>
     </html>
   );
