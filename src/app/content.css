@@ -7,3 +7,42 @@
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     background-image: linear-gradient(to right, #dfe2e5, rgb(151, 149, 149));
   }
+
+  .primary {
+    padding: 1rem 2rem; /* Adjust padding as needed */
+    border-radius: 1rem; /* Rounded border */
+    background-color: #000; /* Initial background color */
+    border: none; /* Remove border */
+    color: #fff; /* Text color */
+    font-size: 1.2rem; /* Font size */
+    font-weight: bold; /* Bold text */
+    cursor: pointer; /* Cursor style */
+    transition: background-color 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease; /* Transitions for smooth effects */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
+  }
+  
+  .primary:hover {
+    background-color: #163181; /* New background color on hover */
+    transform: scale(1.05); /* Scale on hover */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
+  }
+
+  .primary:focus {
+    outline: none; /* Remove focus outline */
+  }
+
+  .secondary {
+    padding: 1rem; /* Adjust padding as needed */
+    border-radius: 1.25rem; /* Adjust border radius as needed */
+    border: 1px solid transparent; /* Initial border color */
+    color: white; /* Initial text color */
+    background-size: 200% 100%; /* Double the width to cover from left to right */
+    transition: border-color 1s ease, color 1s ease, background-position 1s ease; /* Transitions */
+  }
+
+  .secondary:hover {
+    border-color: #1e40af; /* New border color on hover */
+    color: #1e40af; /* New text color on hover */
+    background-position: -100% 0; /* Move gradient fully to the right */
+  }
+  

@@ -9,7 +9,7 @@ const TransitionProvider = ({ children }) => {
   const pathName = usePathname();
 
   return (
-    <AnimatePresence>
+    <AnimatePresence mode="wait">
       <div
         key={pathName}
         className="w-screen h-screen bg-gradient-to-b from-blue-100 to-gray-400"
