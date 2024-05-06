@@ -46,3 +46,19 @@
     background-position: -100% 0; /* Move gradient fully to the right */
   }
   
+  .secondarySkills {
+    padding: .5rem; /* Adjust padding as needed */
+    border-radius: 1.25rem; /* Adjust border radius as needed */
+    border: .75px solid transparent; /* Initial border color */
+    color: white; /* Initial text color */
+    background-size: 200% 100%; /* Double the width to cover from left to right */
+    transition: border-color 1s ease, color 1s ease, background-position 1s ease; /* Transitions */
+    cursor: default;
+  }
+  
+  .secondarySkills:hover {
+    border-color: #1e40af; /* New border color on hover */
+    color: #1e40af; /* New text color on hover */
+    background-position: -100% 0; /* Move gradient fully to the right */
+    cursor: default;
+  }
