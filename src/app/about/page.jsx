@@ -4,6 +4,7 @@ import ExperienceItem from "./experience";
 import SkillItem from "./skillItem.jsx";
 import { useRef } from "react";
 import ScrollIcon from "./scrollIcon.jsx";
+import Brain from "../components/brain"
 
 const AboutPage = () => {
   const skills = ["C++", "C", "Python", "JavaScript", "Swift", "HTML/CSS", "Bash", "SQL", "Nodejs"]
@@ -119,8 +120,9 @@ const AboutPage = () => {
         </div>
         {/* SVG CONTAINER */}
         <div className="hidden lg:block w-1/3 sticky top-0 z-30 xl:w-1/2">
+          <Brain scrollYProgress={scrollYProgress} />
         </div>
-      </div>
+        </div>
     </motion.div>
   );
 };
