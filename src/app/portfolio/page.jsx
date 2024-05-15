@@ -25,7 +25,7 @@ const PortfolioPage = () => {
         {/* MY PROJECTS CONTAINER */}
         <div className="sticky top-0 flex h-screen gap-4 items-center overflow-hidden">
           <motion.div style={{ x }} className="flex">
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-b from-purple-300 to-red-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-b from-purple-300 to-red-100" />
             
           </motion.div>
         </div>
