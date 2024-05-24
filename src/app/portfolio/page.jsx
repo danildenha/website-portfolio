@@ -7,36 +7,44 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    color: "from-red-300 to-blue-300",
-    title: "React Commerce",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18073372/pexels-photo-18073372/free-photo-of-young-man-sitting-in-a-car-on-a-night-street.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    color: "from-red-300 to-purple-300",
+    title: "TSP in C++",
+    desc: "This project solves TSP in C++ using dynamic programming and bitset vectors. Given list of cities and distances between, the task is to find the shortest Hamiltonian Cycle. This project can efficiently handle small-medium instances of the problem in O(n^2 * 2^n)",
+    img: "https://i.ytimg.com/vi/cY4HiiFHO1o/maxresdefault.jpg",
+    link: "https://github.com/danildenha/TSP",
   },
   {
     id: 2,
-    color: "from-blue-300 to-violet-300",
-    title: "Next.js Medium Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18023772/pexels-photo-18023772/free-photo-of-close-up-of-a-person-holding-a-wristwatch.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    color: "from-purple-300 to-blue-300",
+    title: "Sudoku Solver in Python",
+    desc: "This Sudoku Solving App is a Python program that utilizes the Pygame library to create an interactive interface for solving Sudoku puzzles. It is designed to allow users to input their own Sudoku puzzles, receive step-by-step solving visualizations, and view the solution.",
+    img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilVgOK_q714LFvmLQxNmgt7RmtayO6AKkycakErIfRjGIF8F75D_Vp_TY4Bv1knbzZDw8zm2LFffmPizf65kh5BE4SSaUzBkmy3d3qxGDsC9jKIyLKStxEM916aXQ11n5q3Dbs96fSDPxm/s1600/Screenshot-Sudoku+Solver-2.png",
+    link: "https://github.com/danildenha/Sudoku-Solver",
   },
   {
     id: 3,
-    color: "from-violet-300 to-purple-300",
-    title: "Vanilla Book App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/6894528/pexels-photo-6894528.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://lama.dev",
+    color: "from-blue-300 to-purple-300",
+    title: "VisionOS App in Swift",
+    desc: "VisionOS App that implements 3D objects and creates random GIFs in immersed reality. Generates random GIFs on user button press using API calls. Includes a collection of 3D models for interactive exploration.",
+    img: "https://miro.medium.com/v2/resize:fit:1400/1*xCTmjMthlzg6NtnG56L7VQ.png",
+    link: "https://github.com/danildenha/visionOsApp",
   },
   {
     id: 4,
-    color: "from-purple-300 to-red-300",
-    title: "Spotify Music App",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores ab id ad nesciunt quo aut corporis modi? Voluptate, quos sunt dolorum facilis, id eum sequi placeat accusantium saepe eos laborum.",
-    img: "https://images.pexels.com/photos/18540208/pexels-photo-18540208/free-photo-of-wood-landscape-water-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    link: "https://lama.dev",
+    color: "from-purple-300 to-yellow-300",
+    title: "Neural Nets in C++",
+    desc: "This repository hosts various projects showcasing the implementation of neural networks in C++. These projects demonstrate the fundamental concepts of neural networks applied to logical operations and number recognition tasks.",
+    img: "https://www.trentonsystems.com/hubfs/Neural_Networks.png",
+    link: "https://github.com/danildenha/Neural-Networks",
   },
+  {
+    id: 5,
+    color: "from-yellow-300 to-red-300",
+    title: "A* Search Python",
+    desc: "This A* Search project uses Python and Pygame to visualize an informed best-first search algorithm that efficiently determines the lowest cost path between any two nodes in a directed weighted graph with non-negative edge weights.",
+    img: "https://theory.stanford.edu/~amitp/game-programming/a-star/best-first-search-trap.png?2017-11-17-16-52-06",
+    link: "https://github.com/danildenha/Astar.search",
+  }
 ];
 
 const PortfolioPage = () => {
@@ -75,7 +83,7 @@ const PortfolioPage = () => {
                     {item.desc}
                   </p>
                   <Link href={item.link} className="flex justify-end">
-                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Demo</button>
+                    <button className="p-2 text-sm md:p-4 md:text-md lg:p-8 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">See Code</button>
                   </Link>
                 </div>
               </div>
@@ -100,13 +108,13 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Software Engineering | Tech Internship 
+                SWE|Full Stack|Data Scientist|Quant 👨‍💻
               </textPath>
             </text>
           </motion.svg>
           <Link
             href="/contact"
-            className="w-16 h-16 md:w-28 md:h-28 absolute top-0 left-0 right-0 bottom-0 m-auto bg-black text-white rounded-full flex items-center justify-center"
+            className="custom-circle"
           >
             Contact Me
           </Link>
