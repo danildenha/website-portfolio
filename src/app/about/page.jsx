@@ -7,7 +7,8 @@ import ScrollIcon from "./scrollIcon.jsx";
 import Brain from "../components/brain"
 
 const AboutPage = () => {
-  const skills = ["C++", "C", "Python", "JavaScript", "Swift", "HTML/CSS", "Bash", "SQL", "Nodejs"]
+  const skills = ["C++", "C", "Python", "Java", "JavaScript", "Swift", "Linux", "SQL", "Nodejs", "Nextjs", "Tailiwnd CSS", "Git/GitHub", "AI/ML",
+"Math","Data Structures and Algorithms", "OOP", "Functional Programming", "REST API"]
   const experienceData = [
     {
       title: "Software Engineering Internship",
@@ -62,14 +63,11 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">Biography</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+            Software Engineer on the rise, pursuing BS in Computer Science. Had an exposure to full stack development and software engineering experiences. Member and speaker in tech community, being a part of Chicago AI/ML and SQL Professionals User Group.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Follow the passion, follow the tech
             </span>
             {/* BIOGRAPHY SCROLL SVG */}
             <ScrollIcon />
