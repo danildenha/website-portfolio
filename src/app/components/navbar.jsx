@@ -87,18 +87,18 @@ const Navbar = () => {
     ))}
   </div>
       {/* SOCIAL MEDIA */}
-      <div className="hidden sm:flex md:flex gap-4 w-1/3 justify-center">
-        <div className="hover-effect text-gray-200 rounded-full">
-          <a href="https://github.com/danildenha" target="_blank" rel="noopener noreferrer">
-            <img src="/github.png" alt="" width={24} height={24} />
-          </a>
-        </div>
-        <div className="hover-effect text-gray-700">
-          <a href="https://www.linkedin.com/in/danil-denha/" target="_blank" rel="noopener noreferrer">
-            <img src="/linkedin.png" alt="" width={24} height={24} />
-          </a>
-        </div>
-      </div>
+<div className="hidden sm:flex md:flex gap-4 w-1/3 justify-center">
+  <div className="hover-effect text-gray-200 rounded-full">
+    <a href="https://github.com/danildenha" target="_blank" rel="noopener noreferrer">
+      <img src="https://github.com/danildenha/website-portfolio/blob/9be4dacaf62156e2438158b81e3c0791a0b86009/public/github.png?raw=true" alt="GitHub" width={24} height={24} />
+    </a>
+  </div>
+  <div className="hover-effect text-gray-700">
+    <a href="https://www.linkedin.com/in/danil-denha/" target="_blank" rel="noopener noreferrer">
+      <img src="https://github.com/danildenha/website-portfolio/blob/9be4dacaf62156e2438158b81e3c0791a0b86009/public/linkedin.png?raw=true" alt="LinkedIn" width={24} height={24} />
+    </a>
+  </div>
+</div>
       {/* RESPONSIVE MENU */}
       <div className="md:hidden">
         {/* MENU BUTTON */}
