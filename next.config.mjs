@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   images: {
     remotePatterns: [
       {
@@ -7,13 +8,7 @@ const nextConfig = {
         hostname: "*",
       },
     ],
-  },
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' }, // This exports the index page
-      // Add more paths as needed
-    };
-  },
+  }
 };
 
 export default nextConfig;
