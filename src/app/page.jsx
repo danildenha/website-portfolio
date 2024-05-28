@@ -31,10 +31,10 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex gap-4">
-            <a href="/portfolio">
+            <a href="website-portfolio/portfolio">
             <button className="primary">View My Work</button>
             </a>
-            <a href="/contact">
+            <a href="website-portfolio/contact">
             <button className="secondary">Contact Me</button>
             </a>
 
