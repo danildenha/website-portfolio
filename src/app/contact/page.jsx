@@ -65,12 +65,11 @@ const ContactPage = () => {
         <form
           onSubmit={sendEmail}
           ref={form}
-          className="h-1/2 lg:h-full lg:w-1/2 bg-blue-50 rounded-t-xl text-base sm:text-lg md:text-xl flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-8 md:p-16 lg:p-24"
+          className="h-1/2 lg:h-full lg:w-1/2 bg-blue-50 rounded-t-xl text-base sm:text-lg md:text-xl flex flex-col gap-4 sm:gap-6 md:gap-8 justify-center p-4 sm:p-6 md:p-12 lg:p-16 xl:p-24"
         >
           <span>My message to Danil Denha:</span>
-          <textarea
-            rows={6}
-            className="bg-transparent border-b-2 border-b-black outline-none resize-none"
+          <input
+            className="bg-transparent border-b-2 border-b-black outline-none"
             name="user_message"
           />
           <span>My mail address is:</span>
@@ -94,6 +93,7 @@ const ContactPage = () => {
             </span>
           )}
         </form>
+
       </div>
     </motion.div>
   );
