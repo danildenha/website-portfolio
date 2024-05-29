@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="https://github.com/danildenha/website-portfolio/blob/815ffbbda548f197dfc479fdc8150df56907f1da/public/favicon.ico" />
     </Head>
       <body className={inter.className}>
       <TransitionProvider>{children}</TransitionProvider>
