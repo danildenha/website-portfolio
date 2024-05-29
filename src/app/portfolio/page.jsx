@@ -7,7 +7,7 @@ import { useRef } from "react";
 const items = [
   {
     id: 1,
-    color: "from-red-300 to-purple-300",
+    color: "from-red-300 to-lime-300",
     title: "TSP in C++",
     desc: "This project solves TSP in C++ using dynamic programming and bitset vectors. Given list of cities and distances between, the task is to find the shortest Hamiltonian Cycle. This project can efficiently handle small-medium instances of the problem in O(n^2 * 2^n)",
     img: "https://i.ytimg.com/vi/cY4HiiFHO1o/maxresdefault.jpg",
@@ -15,7 +15,7 @@ const items = [
   },
   {
     id: 2,
-    color: "from-purple-300 to-blue-300",
+    color: "from-lime-300 to-blue-300",
     title: "Sudoku Solver in Python",
     desc: "This Sudoku Solving App is a Python program that utilizes the Pygame library to create an interactive interface for solving Sudoku puzzles. It is designed to allow users to input their own Sudoku puzzles, receive step-by-step solving visualizations, and view the solution.",
     img: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilVgOK_q714LFvmLQxNmgt7RmtayO6AKkycakErIfRjGIF8F75D_Vp_TY4Bv1knbzZDw8zm2LFffmPizf65kh5BE4SSaUzBkmy3d3qxGDsC9jKIyLKStxEM916aXQ11n5q3Dbs96fSDPxm/s1600/Screenshot-Sudoku+Solver-2.png",
@@ -23,7 +23,7 @@ const items = [
   },
   {
     id: 3,
-    color: "from-blue-300 to-purple-300",
+    color: "from-blue-300 to-fuchsia-200",
     title: "VisionOS App in Swift",
     desc: "VisionOS App that implements 3D objects and creates random GIFs in immersed reality. Generates random GIFs on user button press using API calls. Includes a collection of 3D models for interactive exploration.",
     img: "https://miro.medium.com/v2/resize:fit:1400/1*xCTmjMthlzg6NtnG56L7VQ.png",
@@ -31,7 +31,7 @@ const items = [
   },
   {
     id: 4,
-    color: "from-purple-300 to-yellow-300",
+    color: "from-fuchsia-200 to-yellow-300",
     title: "Neural Nets in C++",
     desc: "This repository hosts various projects showcasing the implementation of neural networks in C++. These projects demonstrate the fundamental concepts of neural networks applied to logical operations and number recognition tasks.",
     img: "https://www.trentonsystems.com/hubfs/Neural_Networks.png",
@@ -39,7 +39,7 @@ const items = [
   },
   {
     id: 5,
-    color: "from-yellow-300 to-red-300",
+    color: "from-yellow-300 to-teal-300",
     title: "A* Search Python",
     desc: "This A* Search project uses Python and Pygame to visualize an informed best-first search algorithm that efficiently determines the lowest cost path between any two nodes in a directed weighted graph with non-negative edge weights.",
     img: "https://theory.stanford.edu/~amitp/game-programming/a-star/best-first-search-trap.png?2017-11-17-16-52-06",
@@ -89,7 +89,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
-            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-red-300 to-purple-300" />
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-teal-300 to-teal-300" />
           </motion.div>
         </div>
       </div>
