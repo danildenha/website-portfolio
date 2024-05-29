@@ -8,37 +8,61 @@
     background-image: linear-gradient(to right, #dfe2e5, rgb(151, 149, 149));
   }
 
-  .primary {
-    padding: 1rem 2rem; /* Adjust padding as needed */
-    border-radius: 1rem; /* Rounded border */
-    background-color: #000; /* Initial background color */
-    border: none; /* Remove border */
-    color: #fff; /* Text color */
-    font-size: 1.2rem; /* Font size */
-    font-weight: bold; /* Bold text */
-    cursor: pointer; /* Cursor style */
-    transition: background-color 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease; /* Transitions for smooth effects */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow */
-  }
-  
-  .primary:hover {
-    background-color: rgb(5, 19, 48);/* New background color on hover */
-    transform: scale(1.05); /* Scale on hover */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3); /* Increase shadow on hover */
-  }
+  /* styles.css */
 
-  .primary:focus {
-    outline: none; /* Remove focus outline */
-  }
+.primary {
+  padding: 0.5rem 1rem; /* Default smaller padding */
+  border-radius: 1rem;
+  background-color: #000;
+  border: none;
+  color: #fff;
+  font-size: 1rem; /* Default smaller font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.8s ease, transform 0.8s ease, box-shadow 0.8s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-  .secondary {
-    padding: 1rem; /* Adjust padding as needed */
-    border-radius: 1.25rem; /* Adjust border radius as needed */
-    border: 1px solid transparent; /* Initial border color */
-    color: white; /* Initial text color */
-    background-size: 200% 100%; /* Double the width to cover from left to right */
-    transition: border-color 1s ease, color 1s ease, background-position 1s ease; /* Transitions */
+.primary:hover {
+  background-color: rgb(5, 19, 48);
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+}
+
+.primary:focus {
+  outline: none;
+}
+
+.secondary {
+  padding: 0.5rem 1rem; /* Default smaller padding */
+  border-radius: 1.25rem;
+  border: 1px solid transparent;
+  color: white;
+  background-size: 200% 100%;
+  transition: border-color 1s ease, color 1s ease, background-position 1s ease;
+}
+
+@media (min-width: 640px) {
+  .primary, .secondary {
+    padding: 0.75rem 1.5rem; /* Adjust padding for small screens */
+    font-size: 1.1rem; /* Adjust font size for small screens */
   }
+}
+
+@media (min-width: 768px) {
+  .primary, .secondary {
+    padding: 1rem 2rem; /* Adjust padding for medium screens */
+    font-size: 1.2rem; /* Adjust font size for medium screens */
+  }
+}
+
+@media (min-width: 1024px) {
+  .primary, .secondary {
+    padding: 1.25rem 2.5rem; /* Adjust padding for large screens */
+    font-size: 1.4rem; /* Adjust font size for large screens */
+  }
+}
+
 
   .secondary:hover {
     border-color: #1e40af; /* New border color on hover */
@@ -64,8 +88,8 @@
   }
   
   .custom-circle {
-    width: 4rem; /* w-16 */
-    height: 4rem; /* h-16 */
+    width: 5rem; /* w-16 */
+    height: 5rem; /* h-16 */
     position: absolute;
     top: 0;
     left: 0;
