@@ -89,6 +89,7 @@ const PortfolioPage = () => {
                 </div>
               </div>
             ))}
+            <div className="h-screen w-screen flex items-center justify-center bg-gradient-to-r from-red-300 to-purple-300" />
           </motion.div>
         </div>
       </div>
@@ -109,7 +110,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                SWE|Full Stack|Data Scientist|Quant 👨‍💻
+                SWE|Full Stack|Data Scientist|Quant
               </textPath>
             </text>
           </motion.svg>
