@@ -9,6 +9,7 @@
 /coverage
 
 # next.js
+src/app/contact/
 /.next/
 /out/
 
@@ -34,5 +35,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-src/app/contact/page.jsx
-src/app/contact
+
