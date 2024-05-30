@@ -35,13 +35,13 @@ const Homepage = () => {
           </p>
           {/* BUTTONS */}
           <div className="w-full flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center">
-            <a href="website-portfolio/portfolio">
+            <a href="/portfolio">
               <button className="primary w-full sm:w-auto text-base sm:text-lg md:text-xl">
                 <span className="block lg:hidden">Works</span>
                 <span className="hidden lg:block">View My Work</span>
               </button>
             </a>
-            <a href="website-portfolio/contact">
+            <a href="/contact">
               <button className="secondary w-full sm:w-auto text-base sm:text-lg md:text-xl">
                 <span className="block lg:hidden">Contact</span>
                 <span className="hidden lg:block">Contact Me</span>
