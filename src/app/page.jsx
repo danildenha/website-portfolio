@@ -15,6 +15,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full p-1 lg:w-1/2 relative">
           <Image 
+            priority
             src="https://github.com/danildenha/website-portfolio/blob/584d981b8c5a6e86ea583337eee82be6d159e457/public/hero.png?raw=true" 
             alt="Hero Image" 
             fill 
