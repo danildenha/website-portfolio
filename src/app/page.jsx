@@ -18,7 +18,6 @@ const Homepage = () => {
             alt="Hero Image" 
             fill 
             className="object-contain" 
-            priority 
           />
         </div>
         {/* TEXT CONTAINER */}
